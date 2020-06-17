@@ -1,6 +1,8 @@
 # Unity-Platform-Fighter-Framework
 A work-in-progress platform fighter engine within the Unity engine.
 
+The project is jokingly internally titled "Project Project," which is an inside-joke among some developers in my social circle. 
+
 # Purpose
 This engine is being created for learning purposes. I am also creating a similar a similar platform fighter engine in GameMaker Studio 2.3 beta to compare the two engines.
 
