@@ -6,15 +6,11 @@ using UnityEngine;
 public class StateFall : State
 {
     private int timer;
-    public bool jumping;
-    public StateFall(Character character) : base(character) { timer = 0; jumping = false; }
+    public StateFall(Character character) : base(character) { timer = 0; }
     public override void Step()
     {
-        if (timer < character.jumpSquatFrames)
-        {
 
-        }
-        if (character.inJump)
+        if (character.inJump == 1)
         {
             character.Jump();
         }
@@ -36,6 +32,7 @@ public class StateFall : State
         if (character.IsGrounded())
         {
             character.currentState = new StateIdle(character);
+            character.jumpCount = 0;
         }
     }
 

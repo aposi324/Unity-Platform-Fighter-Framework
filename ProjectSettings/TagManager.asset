@@ -13,6 +13,13 @@ TagManager:
   - UI
   - 
   - 
+  - 
+  - 
+  - 
+  - Chara
+  - 
+  - 
+  - 
   - Floor
   - 
   - 
@@ -30,14 +37,10 @@ TagManager:
   - 
   - 
   - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
-  - 
   m_SortingLayers:
+  - name: BG
+    uniqueID: 3680286303
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0

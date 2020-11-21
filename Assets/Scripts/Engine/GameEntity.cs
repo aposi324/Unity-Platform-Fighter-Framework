@@ -14,12 +14,13 @@ public class GameEntity : MonoBehaviour
     public float grav;
     public float maxFallSpeed;
     private RaycastHit2D result;    // Raycast result object to be used wherever Raycasts are necessary for collisions.
-
+    protected bool didLand = false;
     /// <summary>
     /// Apply the gravity force to the velocity vector.
     /// </summary>
     public void ApplyGravity()
     {
+
         velocity.y = Mathf.Max(maxFallSpeed, velocity.y + grav);
     }
 
@@ -46,6 +47,7 @@ public class GameEntity : MonoBehaviour
             if (result.collider != null)
             {
                 velocity.y = -result.distance;
+                didLand = true;
             }
         }
     }  

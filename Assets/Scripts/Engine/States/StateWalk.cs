@@ -27,7 +27,7 @@ public class StateWalk : State
             character.currentState = new StateIdle(character);
         }
 
-        if (character.inJump)
+        if (character.inJump == 1)
         {
             character.Jump();
         }
