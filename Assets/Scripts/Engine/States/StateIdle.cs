@@ -8,6 +8,7 @@ public class StateIdle : State
     public StateIdle(Character character) : base(character) 
     {
         OnStateEnter();
+        character.velocity.x = 0f;
     }
 
     public override void Step()

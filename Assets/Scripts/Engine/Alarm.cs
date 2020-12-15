@@ -2,20 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-public class Alarm : MonoBehaviour
+public class Alarm : ScriptableObject
 {
     private Action alarmCallback;
     private int timer;
     private bool _isSet = false;
 
-    public void SetAlarm(int timer, Action alarmCallback)
+    public void SetAlarm(int timer, Action alarmCallback, bool isPrecise = false)
     {
-        _isSet = true;
+        this._isSet = true;
         this.timer = timer;
         this.alarmCallback = alarmCallback;
     }
 
-    private void FixedUpdate()
+    public void CustomUpdate()
     {
    
         if (timer > 0)
@@ -26,7 +26,6 @@ public class Alarm : MonoBehaviour
             {
                 _isSet = false;
                 alarmCallback();
-             
             }
         }
     }

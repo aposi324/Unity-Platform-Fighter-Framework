@@ -35,7 +35,7 @@ public class StateWalk : State
 
     public override void OnStateEnter()
     {
-        Debug.Log("Hi mom");
+        //Debug.Log("Hi mom");
         character.animator.SetTrigger("walk");
         character.stateString = "walk";
     }
