@@ -15,9 +15,9 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Perspective
   - Chara
-  - 
+  - BG
   - 
   - 
   - Floor
@@ -43,4 +43,7 @@ TagManager:
     locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Perspective Layer
+    uniqueID: 1587288295
     locked: 0

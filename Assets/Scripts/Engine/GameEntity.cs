@@ -25,6 +25,7 @@ public class GameEntity : MonoBehaviour
 
     public int launchAngle;
     public int hitstunFrames;
+    public float weight = 100f;
     public void Start()
     {
         ID = nextID;
@@ -36,7 +37,8 @@ public class GameEntity : MonoBehaviour
     /// </summary>
     public void ApplyGravity()
     {
-        velocity.y = Mathf.Max(maxFallSpeed, velocity.y + grav);
+        //velocity.y = Mathf.Max(maxFallSpeed, velocity.y + grav);
+        velocity.y -= grav;
     }
 
     /// <summary>
@@ -66,6 +68,7 @@ public class GameEntity : MonoBehaviour
             {
                 compositeVelocity.y = -result.distance;
                 didLand = true;
+                velocity.y = 0f;
             }
         }
     }  
@@ -83,10 +86,16 @@ public class GameEntity : MonoBehaviour
     public void HandleHurt(HitBoxCollision hbc)
     {
         Debug.Log(hbc.toString());
+        var stats = hbc.hitStats;
+        /*
         var kb = 30f;
         //TODO: Calculate KB
         knockback.x = kb * Mathf.Sin(Mathf.Deg2Rad * hbc.hitStats.angle);
         knockback.y = kb * Mathf.Cos(Mathf.Deg2Rad * hbc.hitStats.angle);
+        */
+        var kb = EntityPhysics.CalculateKnockback(30f, stats.damage, weight, stats.baseKnockback, stats.knockBackGrowth);
+        knockback = EntityPhysics.CalculateKnockbackComponents(kb, stats.angle);
+        Debug.Log(knockback);
     }
 
 
