@@ -17,11 +17,11 @@ public class StateFall : State
         /* Temporary Movement */
         if (character.inRight)
         {
-            character.velocity.x = 5f;
+            character.velocity.x = character.airSpeed;
         }
         else if (character.inLeft)
         {
-            character.velocity.x = -5f;
+            character.velocity.x = -character.airSpeed;
         }
         else
         {

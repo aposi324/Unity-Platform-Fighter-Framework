@@ -9,16 +9,18 @@ using UnityEngine;
 
 public class Character : GameEntity
 {
+    //Stats
     public float jumpForce;
+    public float walkSpeed;
+    public float airSpeed;
+
+
     public float jumpCoolDown;
     public Alarm jumpAlarm;
     public Alarm hitLagAlarm;
-    public bool inRight = false;
-    public bool inLeft = false;
-    public int inJump = 0;
-    public bool inPrimary = false;
+    
     public Animator animator;
-    public bool canJump = true;
+    //public bool canJump = true;
     public int timer;
     public int facing = 1;
     public int jumpSquatFrames = 20;
@@ -31,9 +33,20 @@ public class Character : GameEntity
     protected int palette = 1;
     public int timerSpeed = 0;
     public bool inHitLag = false;
-    // Moveset
-    [SerializeField]
-    public StateAttack attackScript;
+
+    public bool canJump { get; set; }
+    public bool canAttack { get; set; }
+
+
+    // Control Stuff
+    public bool inRight { get; set; }
+    public bool inLeft { get; set; }
+    public bool inPrimary { get; set; }
+    public int inJump { get; set; }
+    public bool inDown { get; set; }
+
+
+    
 
 
     public HitBoxWrapper hitbox;
@@ -48,6 +61,12 @@ public class Character : GameEntity
 
     public SpriteRenderer spriteRenderer;
     private MaterialPropertyBlock _propBlock;
+
+
+
+    // Moveset
+    public StateAttack jabScript;
+
     /// <summary>
     /// Initialize the character
     /// </summary>
@@ -67,6 +86,9 @@ public class Character : GameEntity
         playerContactFilter.layerMask = playerMask;
 
         timerSpeed = 1;
+
+        canJump = true;
+        canAttack = true;
     }
 
     private void Awake()
@@ -89,6 +111,7 @@ public class Character : GameEntity
             currentState.Step();
             if (!inHitLag)
             {
+                
                 // Select attack
                 if (inPrimary)
                 {
@@ -113,6 +136,7 @@ public class Character : GameEntity
     {
         inRight     = InputHandler.inputs[playerNum].isPressed  (InputContainer.Button.IN_RIGHT     );
         inLeft      = InputHandler.inputs[playerNum].isPressed  (InputContainer.Button.IN_LEFT      );
+        inDown      = InputHandler.inputs[playerNum].isPressed  (InputContainer.Button.IN_DOWN      );
         inPrimary   = InputHandler.inputs[playerNum].isPressed  (InputContainer.Button.IN_PRIMARY   );
         inJump      = InputHandler.inputs[playerNum].timePressed(InputContainer.Button.IN_JUMP      );
     }
@@ -186,7 +210,6 @@ public class Character : GameEntity
         knockback = EntityPhysics.CalculateKnockbackComponents(kb, stats.angle);
         currentState = new StateHurt(this);
         Debug.Log("Player " + playerNum + " Damage: " + damage);
-
     }
 
     private void UpdateAlarms()
@@ -210,7 +233,6 @@ public class Character : GameEntity
     {
         hitbox.hitData = new HitBox(data);
         hitbox.hitData.angle = HelperFunctions.CorrectAngle(hitbox.hitData.angle, facing);
-        Debug.Log("Hitbox angle: " + hitbox.hitData.angle + " Facing: " + facing);
     }
 
     private void InstallHitBox2(HitBoxData data)
@@ -222,4 +244,6 @@ public class Character : GameEntity
     {
         
     }
+
+
 }

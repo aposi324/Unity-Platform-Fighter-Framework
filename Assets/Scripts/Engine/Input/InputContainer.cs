@@ -35,14 +35,14 @@ public class InputAxis
 public class InputContainer
 {
     public enum Button { IN_RIGHT, IN_LEFT, IN_UP, IN_DOWN, IN_PRIMARY, IN_JUMP };
+    public enum Axis { LEFT_HORIZONTAL, LEFT_VERTICAL, RIGHT_HORIZONTAL, RIGHT_VERTICAL, LEFT_TRIGGER, RIGHT_TRIGGER };
+
     public const int NUM_BUTTONS = 6;
     public InputButton[] inButton = new InputButton[NUM_BUTTONS];
     
     
     public InputContainer()
     {
-        
-        
         for (int i = 0; i < NUM_BUTTONS; ++i)
         {
             inButton[i] = new InputButton();

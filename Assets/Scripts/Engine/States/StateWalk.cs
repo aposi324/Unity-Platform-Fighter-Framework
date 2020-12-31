@@ -13,12 +13,12 @@ public class StateWalk : State
         /* Temporary Movement */
         if (character.inRight)
         {
-            character.velocity.x = 5f;
+            character.velocity.x = character.walkSpeed;
             character.transform.localScale = new Vector3(1f, 1f, 1f);
         }
         else if (character.inLeft)
         {
-            character.velocity.x = -5f;
+            character.velocity.x = -character.walkSpeed;
             character.transform.localScale = new Vector3(-1f, 1f, 1f);
         }
         else

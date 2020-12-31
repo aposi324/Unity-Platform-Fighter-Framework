@@ -1,31 +1,31 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: d1749f745c20166468a12bf78290721f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: -4802394454740543111
+    second: jab_burst_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: 869131221978450030
+    second: jab_burst_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: 8393258225251414422
+    second: jab_burst_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: 6625209985374792227
+    second: jab_burst_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: -1036052799016623715
+    second: jab_burst_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: -7067669382542002600
+    second: jab_burst_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
+      213: -5163954754412200212
+    second: jab_burst_6
   - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: 4109668516680889373
+    second: jab_burst_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +55,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -71,7 +71,7 @@ TextureImporter:
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 2.9
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
-  spriteGenerateFallbackPhysicsShape: 1
+  spriteGenerateFallbackPhysicsShape: 0
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
@@ -88,7 +88,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -100,7 +100,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,169 +111,169 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: jab_burst_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: 97952e500b77a5db0800000000000000
+      internalID: -4802394454740543111
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: jab_burst_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 105
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: e680a35dd36cf0c00800000000000000
+      internalID: 869131221978450030
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: jab_burst_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 210
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: 6917c30f2e7da7470800000000000000
+      internalID: 8393258225251414422
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: jab_burst_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 315
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: 32aa2ac316971fb50800000000000000
+      internalID: 6625209985374792227
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: jab_burst_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 420
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: d91a012f7733f91f0800000000000000
+      internalID: -1036052799016623715
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: jab_burst_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 525
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: 856fda784289aed90800000000000000
+      internalID: -7067669382542002600
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: jab_burst_6
       rect:
         serializedVersion: 2
-        x: 258
+        x: 630
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
+      spriteID: cee321bb282f558b0800000000000000
+      internalID: -5163954754412200212
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_7
+      name: jab_burst_7
       rect:
         serializedVersion: 2
-        x: 301
+        x: 735
         y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+        width: 105
+        height: 106
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: d14fe51fdb9780930800000000000000
+      internalID: 4109668516680889373
       vertices: []
       indices: 
       edges: []

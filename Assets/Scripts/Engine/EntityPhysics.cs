@@ -32,8 +32,8 @@ public static class EntityPhysics
     public static Vector3 CalculateKnockbackComponents(float kb, int angle)
     {
         Vector3 retVector = new Vector3(0f, 0f, 0f);
-        retVector.y = kb * 0.03f * Mathf.Sin(Mathf.Deg2Rad * angle) * 2f;
-        retVector.x = kb * 0.03f * Mathf.Cos(Mathf.Deg2Rad * angle) * 2f;
+        retVector.y = kb * 0.03f * Mathf.Sin(Mathf.Deg2Rad * angle);
+        retVector.x = kb * 0.03f * Mathf.Cos(Mathf.Deg2Rad * angle);
         return retVector;
     }
 
