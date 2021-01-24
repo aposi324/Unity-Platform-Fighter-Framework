@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: a90400f9808cb564da7c96cca615423d
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: -3876621413349325333
+    second: fox_dash_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: 2768832359836441843
+    second: fox_dash_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: -6496532323008301480
+    second: fox_dash_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: -4841769432672398000
+    second: fox_dash_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: 5791651144489011790
+    second: fox_dash_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: -6763876918053976362
+    second: fox_dash_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
+      213: 7466320748566281451
+    second: fox_dash_6
   - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: 5034650220951754547
+    second: fox_dash_7
+  - first:
+      213: -1359372512929685685
+    second: fox_dash_8
+  - first:
+      213: -763714536968012581
+    second: fox_dash_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +92,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -98,7 +104,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -111,169 +117,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: fox_dash_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: be504a02d59733ac0800000000000000
+      internalID: -3876621413349325333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: fox_dash_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 54
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: 3fc58a28c5edc6620800000000000000
+      internalID: 2768832359836441843
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: fox_dash_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 108
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: 8563f37b54ea7d5a0800000000000000
+      internalID: -6496532323008301480
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: fox_dash_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 162
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: 05597319a549eccb0800000000000000
+      internalID: -4841769432672398000
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: fox_dash_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 216
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: e4a804ac704106050800000000000000
+      internalID: 5791651144489011790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: fox_dash_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 270
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: 6d6cde297c1e122a0800000000000000
+      internalID: -6763876918053976362
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: fox_dash_6
       rect:
         serializedVersion: 2
-        x: 258
+        x: 324
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
+      spriteID: becfb6d9923bd9760800000000000000
+      internalID: 7466320748566281451
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_7
+      name: fox_dash_7
       rect:
         serializedVersion: 2
-        x: 301
+        x: 378
         y: 0
-        width: 43
-        height: 54
+        width: 54
+        height: 51
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.48, y: 0.059}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: 337db2483bbaed540800000000000000
+      internalID: 5034650220951754547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_dash_8
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 0
+        width: 54
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48, y: 0.059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f5569d6e9822de0800000000000000
+      internalID: -1359372512929685685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_dash_9
+      rect:
+        serializedVersion: 2
+        x: 486
+        y: 0
+        width: 54
+        height: 51
+      alignment: 9
+      pivot: {x: 0.48, y: 0.059}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdc383accadb665f0800000000000000
+      internalID: -763714536968012581
       vertices: []
       indices: 
       edges: []

@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: 18d7412a2011e424cbdf43f1fc840073
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: 8042797901781492456
+    second: duster_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: 6315533693512777224
+    second: duster_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: 2617306183860653658
+    second: duster_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: 8626772500742552842
+    second: duster_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: -6956240300852344175
+    second: duster_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: -6058258163297140094
+    second: duster_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
+      213: -2163851845078167368
+    second: duster_6
   - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: 5905519816187529455
+    second: duster_7
+  - first:
+      213: 4045620930733471233
+    second: duster_8
+  - first:
+      213: 9113619367718274977
+    second: duster_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -55,7 +61,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: -1
     aniso: -1
     mipBias: -100
     wrapU: 1
@@ -86,9 +92,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -98,9 +104,9 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -111,169 +117,211 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: duster_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: 8e261ff3412cd9f60800000000000000
+      internalID: 8042797901781492456
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: duster_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 83
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: 80ef6d0ee6845a750800000000000000
+      internalID: 6315533693512777224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: duster_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 166
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: a5e827d6b1a825420800000000000000
+      internalID: 2617306183860653658
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: duster_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 249
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: a0d3ed002e378b770800000000000000
+      internalID: 8626772500742552842
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: duster_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 332
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: 19a80775d48767f90800000000000000
+      internalID: -6956240300852344175
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: duster_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 415
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: 282401b6c4ebceba0800000000000000
+      internalID: -6058258163297140094
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: duster_6
       rect:
         serializedVersion: 2
-        x: 258
+        x: 498
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
+      spriteID: 8b0da83263478f1e0800000000000000
+      internalID: -2163851845078167368
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_7
+      name: duster_7
       rect:
         serializedVersion: 2
-        x: 301
+        x: 581
         y: 0
-        width: 43
-        height: 54
+        width: 83
+        height: 79
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.94, y: 0.03}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: fe843e9ebfe94f150800000000000000
+      internalID: 5905519816187529455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duster_8
+      rect:
+        serializedVersion: 2
+        x: 664
+        y: 0
+        width: 83
+        height: 79
+      alignment: 9
+      pivot: {x: 0.94, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 106f0484dcee42830800000000000000
+      internalID: 4045620930733471233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: duster_9
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 0
+        width: 83
+        height: 79
+      alignment: 9
+      pivot: {x: 0.94, y: 0.03}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a7c7f667841a7e70800000000000000
+      internalID: 9113619367718274977
       vertices: []
       indices: 
       edges: []

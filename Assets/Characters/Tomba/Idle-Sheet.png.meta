@@ -1,31 +1,28 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: 3f967cbde9b65064e86100e45a76b6f6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: -3145328045451892686
+    second: Idle-Sheet_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: -6552843917330368855
+    second: Idle-Sheet_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: 7309844833446704383
+    second: Idle-Sheet_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: -1701584443341091289
+    second: Idle-Sheet_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: 4619437029804489033
+    second: Idle-Sheet_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: -4551553420487462637
+    second: Idle-Sheet_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
-  - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: -8319592003026277099
+    second: Idle-Sheet_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +83,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -98,7 +95,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -111,169 +108,148 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: Idle-Sheet_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: 23824ccaecc8954d0800000000000000
+      internalID: -3145328045451892686
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: Idle-Sheet_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 32
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: 9a6b1f6fc2f9f05a0800000000000000
+      internalID: -6552843917330368855
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: Idle-Sheet_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 64
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: ff4b0d49529c17560800000000000000
+      internalID: 7309844833446704383
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: Idle-Sheet_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 96
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: 72ec253d6f1c268e0800000000000000
+      internalID: -1701584443341091289
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: Idle-Sheet_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 128
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: 94938c7f0898b1040800000000000000
+      internalID: 4619437029804489033
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: Idle-Sheet_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 160
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: 31171ab7742a5d0c0800000000000000
+      internalID: -4551553420487462637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: Idle-Sheet_6
       rect:
         serializedVersion: 2
-        x: 258
+        x: 192
         y: 0
-        width: 43
-        height: 54
+        width: 32
+        height: 58
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.53, y: 0.052}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: fox_idle_7
-      rect:
-        serializedVersion: 2
-        x: 301
-        y: 0
-        width: 43
-        height: 54
-      alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: 51d207ff62fda8c80800000000000000
+      internalID: -8319592003026277099
       vertices: []
       indices: 
       edges: []

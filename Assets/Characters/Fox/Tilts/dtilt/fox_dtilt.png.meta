@@ -1,31 +1,37 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: d55311ffafe720f41826e9dc3c63be30
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: -9219038425616616419
+    second: fox_dtilt_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: 3058596863938004902
+    second: fox_dtilt_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: 3179118624669891923
+    second: fox_dtilt_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: -2935052951989379498
+    second: fox_dtilt_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: 2790291437436941700
+    second: fox_dtilt_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: 3921826095219527752
+    second: fox_dtilt_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
+      213: 664633217241955307
+    second: fox_dtilt_6
   - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: -6487621317046140541
+    second: fox_dtilt_7
+  - first:
+      213: 518314103587221402
+    second: fox_dtilt_8
+  - first:
+      213: -4415806876232946432
+    second: fox_dtilt_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +92,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -98,7 +104,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -111,169 +117,190 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: fox_dtilt_1
       rect:
         serializedVersion: 2
-        x: 0
+        x: 81
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: 6a7062284a1527a20800000000000000
+      internalID: 3058596863938004902
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: fox_dtilt_2
       rect:
         serializedVersion: 2
-        x: 43
+        x: 162
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: 35df642ab8f7e1c20800000000000000
+      internalID: 3179118624669891923
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: fox_dtilt_3
       rect:
         serializedVersion: 2
-        x: 86
+        x: 243
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: 65e16b704e89447d0800000000000000
+      internalID: -2935052951989379498
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: fox_dtilt_4
       rect:
         serializedVersion: 2
-        x: 129
+        x: 324
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: 4853e3c574b19b620800000000000000
+      internalID: 2790291437436941700
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: fox_dtilt_5
       rect:
         serializedVersion: 2
-        x: 172
+        x: 405
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: 840da6c0e002d6630800000000000000
+      internalID: 3921826095219527752
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: fox_dtilt_6
       rect:
         serializedVersion: 2
-        x: 215
+        x: 486
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: bebb1a3c360493900800000000000000
+      internalID: 664633217241955307
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: fox_dtilt_7
       rect:
         serializedVersion: 2
-        x: 258
+        x: 567
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
+      spriteID: 3818638f8c657f5a0800000000000000
+      internalID: -6487621317046140541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_7
+      name: fox_dtilt_8
       rect:
         serializedVersion: 2
-        x: 301
+        x: 648
         y: 0
-        width: 43
-        height: 54
+        width: 81
+        height: 40
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.482, y: 0.1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: a9f246a5eeb613700800000000000000
+      internalID: 518314103587221402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_dtilt_9
+      rect:
+        serializedVersion: 2
+        x: 729
+        y: 0
+        width: 81
+        height: 40
+      alignment: 9
+      pivot: {x: 0.482, y: 0.1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d6861ca07e7b2c0800000000000000
+      internalID: -4415806876232946432
       vertices: []
       indices: 
       edges: []

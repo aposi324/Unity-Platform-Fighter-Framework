@@ -1,31 +1,43 @@
 fileFormatVersion: 2
-guid: c5ded7a782b6a044ab95fae5ae7de397
+guid: 408f9cadb57edff46bffd52e01b20597
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2838263819315806477
-    second: fox_idle_0
+      213: -1639252440209396519
+    second: fox_bair_0
   - first:
-      213: -3603591456620409434
-    second: fox_idle_1
+      213: 5874530557095015238
+    second: fox_bair_1
   - first:
-      213: -396270646125028841
-    second: fox_idle_2
+      213: -44152813403443424
+    second: fox_bair_2
   - first:
-      213: -4681365774483798746
-    second: fox_idle_3
+      213: -8324461863708102053
+    second: fox_bair_3
   - first:
-      213: 1135744874489955026
-    second: fox_idle_4
+      213: -1666508909746218319
+    second: fox_bair_4
   - first:
-      213: -644219203176927517
-    second: fox_idle_5
+      213: 7093146269056153164
+    second: fox_bair_5
   - first:
-      213: -5151672622232361401
-    second: fox_idle_6
+      213: -2864130652875028630
+    second: fox_bair_6
   - first:
-      213: 3419158764854622277
-    second: fox_idle_7
+      213: -5053459478868005315
+    second: fox_bair_7
+  - first:
+      213: 1942360938204389107
+    second: fox_bair_8
+  - first:
+      213: -8003615932595542747
+    second: fox_bair_9
+  - first:
+      213: 5322581689010001425
+    second: fox_bair_10
+  - first:
+      213: 3762222071075924034
+    second: fox_bair_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -86,7 +98,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -98,7 +110,7 @@ TextureImporter:
   - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
-    resizeAlgorithm: 1
+    resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
     compressionQuality: 50
@@ -111,169 +123,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: fox_idle_0
+      name: fox_bair_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3fe76d618167c98d0800000000000000
-      internalID: -2838263819315806477
+      spriteID: 9dc602c37943049e0800000000000000
+      internalID: -1639252440209396519
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_1
+      name: fox_bair_1
       rect:
         serializedVersion: 2
-        x: 43
+        x: 61
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6ad0280b9a87dfdc0800000000000000
-      internalID: -3603591456620409434
+      spriteID: 64373d5ca66868150800000000000000
+      internalID: 5874530557095015238
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_2
+      name: fox_bair_2
       rect:
         serializedVersion: 2
-        x: 86
+        x: 122
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 71a9dc662f9208af0800000000000000
-      internalID: -396270646125028841
+      spriteID: 02fe0490043236ff0800000000000000
+      internalID: -44152813403443424
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_3
+      name: fox_bair_3
       rect:
         serializedVersion: 2
-        x: 129
+        x: 183
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 625c83c81a2780fb0800000000000000
-      internalID: -4681365774483798746
+      spriteID: b5274633a02997c80800000000000000
+      internalID: -8324461863708102053
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_4
+      name: fox_bair_4
       rect:
         serializedVersion: 2
-        x: 172
+        x: 244
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2d2c17722f9f2cf00800000000000000
-      internalID: 1135744874489955026
+      spriteID: 1ba9d83e9fe5fd8e0800000000000000
+      internalID: -1666508909746218319
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_5
+      name: fox_bair_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 305
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3ee67254c064f07f0800000000000000
-      internalID: -644219203176927517
+      spriteID: c46bafa53faef6260800000000000000
+      internalID: 7093146269056153164
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_6
+      name: fox_bair_6
       rect:
         serializedVersion: 2
-        x: 258
+        x: 366
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7462cb87b059188b0800000000000000
-      internalID: -5151672622232361401
+      spriteID: a67831598509048d0800000000000000
+      internalID: -2864130652875028630
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: fox_idle_7
+      name: fox_bair_7
       rect:
         serializedVersion: 2
-        x: 301
+        x: 427
         y: 0
-        width: 43
-        height: 54
+        width: 61
+        height: 53
       alignment: 9
-      pivot: {x: 0.627907, y: 0.037037037}
+      pivot: {x: 0.69, y: 0.08}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 548b2d9f7ca437f20800000000000000
-      internalID: 3419158764854622277
+      spriteID: d3eed3bd0618ed9b0800000000000000
+      internalID: -5053459478868005315
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_bair_8
+      rect:
+        serializedVersion: 2
+        x: 488
+        y: 0
+        width: 61
+        height: 53
+      alignment: 9
+      pivot: {x: 0.69, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fe54437bf6a4fa10800000000000000
+      internalID: 1942360938204389107
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_bair_9
+      rect:
+        serializedVersion: 2
+        x: 549
+        y: 0
+        width: 61
+        height: 53
+      alignment: 9
+      pivot: {x: 0.69, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5256cfad6b17de090800000000000000
+      internalID: -8003615932595542747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_bair_10
+      rect:
+        serializedVersion: 2
+        x: 610
+        y: 0
+        width: 61
+        height: 53
+      alignment: 9
+      pivot: {x: 0.69, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 116907d88db9dd940800000000000000
+      internalID: 5322581689010001425
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: fox_bair_11
+      rect:
+        serializedVersion: 2
+        x: 671
+        y: 0
+        width: 61
+        height: 53
+      alignment: 9
+      pivot: {x: 0.69, y: 0.08}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2486d906a09163430800000000000000
+      internalID: 3762222071075924034
       vertices: []
       indices: 
       edges: []
