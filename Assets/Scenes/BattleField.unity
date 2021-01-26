@@ -1650,16 +1650,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 1880908969734448429, guid: 81fef3f6ee2f7194fa9a5cf1f38ad927,
-        type: 3}
-      propertyPath: m_WasSpriteAssigned
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1880908969734448429, guid: 81fef3f6ee2f7194fa9a5cf1f38ad927,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
     - target: {fileID: 4976892314722140038, guid: 81fef3f6ee2f7194fa9a5cf1f38ad927,
         type: 3}
       propertyPath: m_LocalPosition.x

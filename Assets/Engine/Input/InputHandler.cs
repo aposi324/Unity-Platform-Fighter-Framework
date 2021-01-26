@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+
 /// <summary>
 /// Contains an abstraction that is used to handle inputs.
 /// </summary>
@@ -9,7 +10,7 @@ public class InputHandler : MonoBehaviour
 {
     public static InputHandler Instance = null;
     public static InputContainer[] inputs = new InputContainer[2];
-
+    public InputActionAsset myInputActionAsset;
     private void Start()
     {
    
@@ -26,6 +27,10 @@ public class InputHandler : MonoBehaviour
         }
     }
 
+    private void Awake()
+    {
+        myInputActionAsset.Enable();
+    }
     public void CustomUpdate()
     {
         var deadzone = 0.2f;
@@ -52,26 +57,56 @@ public class InputHandler : MonoBehaviour
         p2Controls.bindingMask = InputBinding.MaskByGroup("KeyboardMouse");
         p2Controls.Enable();
         */
+        var keyboard_right = false;
+        var keyboard_left = false;
+        var keyboard_up = false;
+        var keyboard_down = false;
+        var keyboard_primary = false;
+        var keyboard_secondary = false;
 
-
-
+        //Debug.Log(myInputActionAsset.FindAction("Player/Move", true).phase == InputActionPhase.Started);
+        var axis = myInputActionAsset.FindAction("Player/Move", true).ReadValue<Vector2>();
+        var primary = myInputActionAsset.FindAction("Player/Primary", true).ReadValue<float>();
+        var jump = myInputActionAsset.FindAction("Player/Jump", true).ReadValue<float>();
+        var walk = myInputActionAsset.FindAction("Player/Walk", true).ReadValue<float>();
+        //return;
         //var gamepad = new InputControls();
         //gamepad.devices = new[] { Gamepad.all[0] };
         //Debug.Log(Gamepad.all);
-        if (Gamepad.all.Count == 0) return;
-        var gamepad = Gamepad.all[0];
-        if (gamepad == null)
-            return;
+
+
+
+        var isGamepad= Gamepad.all.Count != 0;
+        Gamepad gamepad = null;
+        if (isGamepad)
+        {
+            gamepad = Gamepad.all[0];
+        }
+        // var keyboard = Keyboard.current;
+        //var myControls = new InputControls();
+        //myControls.devices = new InputDevice[] { Keyboard.current };
+        //myControls.bindingMask = InputBinding.MaskByGroup("Player");
+        //myControls.Enable();
+        //if (
+        //InputAction primaryAction = myInputActionAsset.FindAction("PrimaryAction", true);
+
 
 
         //Debug.Log(InputHandler.inputs[0].inAxis[(int)InputContainer.Axis.LEFT_HORIZONTAL].val);
-        InputHandler.inputs[0].inAxis[0].val = gamepad.leftStick.x.ReadValue();
-        InputHandler.inputs[0].inAxis[1].val = gamepad.leftStick.y.ReadValue();
-
+        if (gamepad != null)
+        {
+            InputHandler.inputs[0].inAxis[0].val = gamepad.leftStick.x.ReadValue();
+            InputHandler.inputs[0].inAxis[1].val = gamepad.leftStick.y.ReadValue();
+        } else
+        {
+            InputHandler.inputs[0].inAxis[0].val = axis.x * ((1-walk) * 0.5f); ;
+            InputHandler.inputs[0].inAxis[1].val = axis.y * ((1-walk) * 0.5f); ;
+        }
+        
 
 
         // Update Left stick
-        if (gamepad.leftStick.x.ReadValue() >= deadzone )
+        if ( (gamepad != null && gamepad.leftStick.x.ReadValue() >= deadzone) || axis.x > 0)
         {
             InputHandler.inputs[0].Press(InputContainer.Button.IN_RIGHT);
         } else
@@ -79,8 +114,7 @@ public class InputHandler : MonoBehaviour
             InputHandler.inputs[0].Release(InputContainer.Button.IN_RIGHT);
         }
 
-
-        if (gamepad.leftStick.x.ReadValue() <= -deadzone)
+        if ( (gamepad != null && gamepad.leftStick.x.ReadValue() <= -deadzone) || axis.x < 0)
         {
             InputHandler.inputs[0].Press(InputContainer.Button.IN_LEFT);
         } else
@@ -88,7 +122,7 @@ public class InputHandler : MonoBehaviour
             InputHandler.inputs[0].Release(InputContainer.Button.IN_LEFT);
         }
 
-        if (gamepad.leftStick.y.ReadValue() <= -deadzone)
+        if ( (gamepad != null && gamepad.leftStick.y.ReadValue() <= -deadzone) || axis.y < 0 )
         {
             InputHandler.inputs[0].Press(InputContainer.Button.IN_DOWN);
         } else
@@ -97,8 +131,13 @@ public class InputHandler : MonoBehaviour
         }
 
 
+        // Temp keyboard controls
+        
+
+
+
         // Update Jump Button
-        if (gamepad.xButton.isPressed || gamepad.yButton.isPressed)
+        if ( gamepad != null && (gamepad.xButton.isPressed || gamepad.yButton.isPressed) || jump==1f)
         {
             InputHandler.inputs[0].Press(InputContainer.Button.IN_JUMP);
         } else
@@ -108,7 +147,7 @@ public class InputHandler : MonoBehaviour
 
 
         // Update Attack/Primary button
-        if (gamepad.aButton.isPressed)
+        if ( (gamepad!= null && gamepad.aButton.isPressed) || primary==1f )
         {
             InputHandler.inputs[0].Press(InputContainer.Button.IN_PRIMARY);
         }
