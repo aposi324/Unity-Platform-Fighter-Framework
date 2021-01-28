@@ -32,7 +32,8 @@ public class StateFall : State
 
         if (character.IsGrounded())
         {
-            character.currentState = new StateIdle(character);
+            //character.currentState = new StateIdle(character);
+            character.SwitchState(character.stateIdle);
             character.jumpCount = 0;
         }
     }
@@ -41,6 +42,7 @@ public class StateFall : State
     {
         base.OnStateEnter();
         character.canAttack = true;
+        character.timer = 0;
         //character.animator.SetTrigger("fall");
     }
 

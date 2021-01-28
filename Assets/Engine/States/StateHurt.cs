@@ -12,19 +12,21 @@ public class StateHurt : State
     Alarm hitLagAlarm = ScriptableObject.CreateInstance<Alarm>();
     public StateHurt(Character character) : base(character)
     {
-        OnStateEnter();
+
     }
 
 
 
     public override void Step()
     {
-        hitLagAlarm.CustomUpdate();
+        //hitLagAlarm.CustomUpdate();
 
         character.knockback -= EntityPhysics.GetKnockbackDecay(launchAngle);
-        
-
-
+        if (character.timer == 1)
+        {
+            character.inHitLag = true;
+            character.hitLagAlarm.SetAlarm(30, () => { character.inHitLag = false; Debug.Log("I'm done here"); });
+        }
 
         if (character.timer >= time)
         {
@@ -37,11 +39,11 @@ public class StateHurt : State
     {
         collisionData = character.hitData;
         
-        character.hitLagAlarm.SetAlarm(10, () => { character.timerSpeed = 1; });
+        
         character.timer = 0;
         time = character.hitstunFrames;
 
-        character.inHitLag = true;
+        
         character.animator.SetTrigger("hurt1");
 
 
@@ -62,14 +64,14 @@ public class StateHurt : State
             character.knockback.x = 0;
             character.knockback.y = 0;
         }
-
-        hitLagAlarm.SetAlarm(5, ()=> { character.inHitLag = false; });
+        //character.inHitLag = true;
+        //character.hitLagAlarm.SetAlarm(50, ()=> { character.inHitLag = false; });
     }
 
     public override void OnStateExit()
     {
         base.OnStateExit();
         character.knockback = new Vector3(0f, 0f, 0f);
-
+        character.timer = 0;
     }
 }

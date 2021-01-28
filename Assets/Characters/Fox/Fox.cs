@@ -23,7 +23,7 @@ public partial class Fox : Character
 
     public override void Nair()
     {
-        if (timer == 1)
+        if (timer == 0)
         {
             animator.SetTrigger("nair");
         }
@@ -42,6 +42,7 @@ public partial class Fox : Character
         if (timer == 0)
         {
             animator.SetTrigger("bair");
+            canAttack = false;
         }
     }
     public override void Dtilt()

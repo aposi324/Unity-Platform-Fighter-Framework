@@ -8,7 +8,7 @@ public class Alarm : ScriptableObject
     private int timer;
     private bool _isSet = false;
 
-    public void SetAlarm(int timer, Action alarmCallback, bool isPrecise = false)
+    public void SetAlarm(int timer, Action alarmCallback, bool isPrecise = true)
     {
         this._isSet = true;
         this.timer = timer;
@@ -17,7 +17,6 @@ public class Alarm : ScriptableObject
 
     public void CustomUpdate()
     {
-   
         if (timer > 0)
         {
             timer -= 1;

@@ -68,7 +68,8 @@ public class InputHandler : MonoBehaviour
         var axis = myInputActionAsset.FindAction("Player/Move", true).ReadValue<Vector2>();
         var primary = myInputActionAsset.FindAction("Player/Primary", true).ReadValue<float>();
         var jump = myInputActionAsset.FindAction("Player/Jump", true).ReadValue<float>();
-        var walk = myInputActionAsset.FindAction("Player/Walk", true).ReadValue<float>();
+        var walk = 1f-myInputActionAsset.FindAction("Player/Walk", true).ReadValue<float>();
+        
         //return;
         //var gamepad = new InputControls();
         //gamepad.devices = new[] { Gamepad.all[0] };
@@ -99,8 +100,8 @@ public class InputHandler : MonoBehaviour
             InputHandler.inputs[0].inAxis[1].val = gamepad.leftStick.y.ReadValue();
         } else
         {
-            InputHandler.inputs[0].inAxis[0].val = axis.x * ((1-walk) * 0.5f); ;
-            InputHandler.inputs[0].inAxis[1].val = axis.y * ((1-walk) * 0.5f); ;
+            InputHandler.inputs[0].inAxis[0].val = axis.x * Mathf.Clamp(walk,0.3f,1f);
+            InputHandler.inputs[0].inAxis[1].val = axis.y;
         }
         
 

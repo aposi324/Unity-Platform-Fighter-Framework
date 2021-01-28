@@ -12,7 +12,6 @@ public class StateAttack : State
     }
     public override void Step()
     {
-
         switch (attack) {
             case AttackSlot.jab     : character.Jab()   ; break;
             case AttackSlot.nair    : character.Nair()  ; break;

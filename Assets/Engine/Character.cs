@@ -55,6 +55,7 @@ public class Character : GameEntity
 
     public GameObject duster;
 
+    public int hitlagTimer;
 
     [SerializeField]
     protected int palette = 1;
@@ -106,7 +107,8 @@ public class Character : GameEntity
     public StateDash    stateDash;
     public StateRun stateRun;
     public HitBoxCollision hitData;
-
+    public StateHurt stateHurt;
+    public StateFall stateFall;
     /// <summary>
     /// Initialize the character
     /// </summary>
@@ -131,7 +133,8 @@ public class Character : GameEntity
         stateDash       = new StateDash     (this);
         stateJump       = new StateJump     (this);
         stateRun        = new StateRun      (this);
-
+        stateHurt       = new StateHurt     (this);
+        stateFall        = new StateFall    (this);
         playerContactFilter.layerMask = playerMask;
 
         timerSpeed = 1;
@@ -155,18 +158,25 @@ public class Character : GameEntity
     public virtual void CustomUpdate(float deltaTime)
     {
         position = transform.position;
-        timer += timerSpeed;
+
         ProcessInput();
-        UpdateAlarms();
+        hitLagAlarm.CustomUpdate();
+        hitlagTimer -= 1;
+        if (hitlagTimer == 0)
+        {
+            inHitLag = false;
+        }
+
 
         if (timerSpeed > 0)
         {
-            currentState.Step();
+            
             if (!inHitLag)
             {
-                
+                currentState.Step();
+                UpdateAlarms();
+                timer += timerSpeed;
                 // Select attack
-
                 // Tilts
                 if (canAttack && IsGrounded() && inPrimary && inDown)
                 {
@@ -178,7 +188,7 @@ public class Character : GameEntity
                 }
 
                 // Aerials
-                if (inPrimary && (canAttack && facing == 1 && inLeft || canAttack && facing == -1 && inRight))
+                if (!IsGrounded() && canAttack && inPrimary && (canAttack && facing == 1 && inLeft || canAttack && facing == -1 && inRight))
                 {
                     //attackType = AttackSlot.bair;
                     SwitchState(stateAttack, AttackSlot.bair);
@@ -192,13 +202,16 @@ public class Character : GameEntity
 
                 ApplyGravity();
                 ApplyVelocity();
+
+                UpdateAnimator();
+
+                position = transform.position;
+
             }
 
         }
 
-        UpdateAnimator(Time.deltaTime*timerSpeed);
-
-        position = transform.position;
+        
 
         UpdateRenderer();
     }
@@ -236,10 +249,20 @@ public class Character : GameEntity
     /// Update the character's animator. 
     /// </summary>
     /// <param name="t"></param>
-    public void UpdateAnimator(float t)
+    public void UpdateAnimator()
     {
+
         //animator.SetFloat("time", timer * Time.deltaTime * 0.18f);
-        animator.Update(t);
+        //animator.Update(t);
+        //animator.playbackTime = timer * Time.deltaTime;
+
+        /*
+        Debug.Log((animator.GetCurrentAnimatorStateInfo(0).length));
+        animator.SetFloat("time", (float)timer / (animator.GetCurrentAnimatorStateInfo(0).length/0.0166666667f));
+        animator.Update(0);
+        */
+
+        animator.Update(Time.deltaTime);
         animator.SetFloat("yVelocity", velocity.y);
     }
 
@@ -256,7 +279,8 @@ public class Character : GameEntity
             }
         } else
         {
-            currentState = new StateFall(this);
+            //currentState = new StateFall(this);
+            SwitchState(stateFall);
         }
     }
 
@@ -265,6 +289,7 @@ public class Character : GameEntity
     /// </summary>
     public void HandleHitCollision()
     {
+        
         var hitbox = this.hitbox.boxCollider;
         if (hitbox.enabled)
         {
@@ -293,7 +318,7 @@ public class Character : GameEntity
                     // Put self in hitlag
                     // TODO: Not just timer speed
                     inHitLag = true;
-                    hitLagAlarm.SetAlarm(5, () => { inHitLag = false; });
+                    hitLagAlarm.SetAlarm(30, () => { inHitLag = false; });
                 }
             }
         }
@@ -305,6 +330,7 @@ public class Character : GameEntity
     /// <param name="hbc"></param>
     public new void HandleHurt(HitBoxCollision hbc)
     {
+        Debug.Log("Handdleeee");
         velocity = new Vector3(0f, 0f, 0f);
         var stats = hbc.hitStats;
         damage += stats.damage;
@@ -312,9 +338,11 @@ public class Character : GameEntity
         hitstunFrames = EntityPhysics.CalculateHitstun(kb);
         isTumble = hitstunFrames > 32;
         knockback = EntityPhysics.CalculateKnockbackComponents(kb, stats.angle);
-       
+
+        
         hitData = hbc;
-        currentState = new StateHurt(this);
+        //currentState = new StateHurt(this);
+        SwitchState(stateHurt);
     }
 
     private void UpdateAlarms()
@@ -324,7 +352,7 @@ public class Character : GameEntity
             jumpAlarm.CustomUpdate();
         }
 
-        hitLagAlarm.CustomUpdate();
+      
     }
 
     private void UpdateRenderer()

@@ -1384,6 +1384,12 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6783221218828175257, guid: 751bbe70c6178c0469dc3313df226d61,
+        type: 3}
+      propertyPath: myInputActionAsset
+      value: 
+      objectReference: {fileID: -944628639613478452, guid: 8442a30572d268246853257b5a81b5f6,
+        type: 3}
     - target: {fileID: 6783221218828175259, guid: 751bbe70c6178c0469dc3313df226d61,
         type: 3}
       propertyPath: m_Name
@@ -2000,6 +2006,7 @@ MonoBehaviour:
   dashFrames: 11
   acceleration: 0.02
   duster: {fileID: 8785785049694001151, guid: 81fef3f6ee2f7194fa9a5cf1f38ad927, type: 3}
+  hitlagTimer: 0
   palette: 4
   timerSpeed: 0
   inHitLag: 0
@@ -2037,6 +2044,7 @@ MonoBehaviour:
   stateAttack: {fileID: 0}
   stateDash: {fileID: 0}
   stateRun: {fileID: 0}
+  stateHurt: {fileID: 0}
 --- !u!1 &5781521871979480638
 GameObject:
   m_ObjectHideFlags: 0
